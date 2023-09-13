@@ -1,7 +1,8 @@
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
-import chromium from '@sparticuz/chromium';
-import puppeteer from 'puppeteer-core';
+const chromium = require('@sparticuz/chromium');
+const puppeteer = require('puppeteer-core');
+
 
 
 const userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0';
@@ -118,7 +119,9 @@ async function youtubedownloader(url) {
     return null;
   }
 }
-export default youtubedownloader; 
+
+module.exports = youtubedownloader;
+
 
 
 

@@ -1,10 +1,12 @@
-import dotenv from 'dotenv';
-dotenv.config();
 
-import express from 'express';
-import cors from 'cors';
-import bodyParser from 'body-parser';
-import youtubedownloader from './youtube.js'; 
+// En el servidor, utiliza require
+const dotenv = require('dotenv');
+dotenv.config();
+const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const youtubedownloader = require('./youtube.js');
+
 
 
 const app = express();
